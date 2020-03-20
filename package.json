@@ -1,40 +1,75 @@
 {
-	"name": "library-documentation-cpp",
-	"description": "Search Documentation, docs, devdocs, cpp",
+	"name": "cpp-reference-and-documentation",
+	"displayName": "Cpp Reference and Documentation",
+	"description": "Search Cpp Documentation, cppreference.com",
 	"version": "0.0.5",
-	"publisher": "kunalg",
+	"publisher": "FederAndInk",
+	"author": {
+		"name": "kunalg",
+		"url": "https://github.com/gursahani/search-cpp-documentation.git"
+	},
+	"maintainers": [
+		{
+			"name": "FederAndInk",
+			"url": "https://github.com/FederAndInk",
+			"email": "federandink@gmail.com"
+		}
+	],
+	"contributors": [
+		{
+			"name": "kunalg",
+			"url": "https://github.com/gursahani/search-cpp-documentation.git"
+		},
+		{
+			"name": "FederAndInk",
+			"url": "https://github.com/FederAndInk",
+			"email": "federandink@gmail.com"
+		}
+	],
 	"engines": {
 		"vscode": "^1.31.0"
 	},
-	"icon":"img/cpp_logo.png",
+	"icon": "img/cpp_logo.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/gursahani/search-cpp-documentation.git"
-	  },
-	"categories": ["Other", "Programming Languages"], 
-	
-	"keywords":["search", "documentation", "docs", "devdocs", "cpp"],
+		"url": "https://github.com/FederAndInk/search-cpp-documentation.git"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages"
+	],
+	"keywords": [
+		"cppreference",
+		"search",
+		"documentation",
+		"docs",
+		"devdocs",
+		"cpp",
+		"c++",
+		"reference"
+	],
 	"activationEvents": [
 		"onCommand:docs.start",
 		"onWebviewPanel:docs",
 		"onLanguage:cpp"
-		
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "docs.start",
-				"title": "cpp docs",
-				"category": "search"
+				"title": " Cpp Reference",
+				"category": "Search"
 			}
 		],
-		"keybindings": [{
-			"command": "docs.start",
-			"key": "ctrl+shift+A",
-			"mac": "cmd+shift+A",
-			"when": "editorTextFocus"
-		}]
+		"keybindings": [
+			{
+				"command": "docs.start",
+				"key": "ctrl+shift+A",
+				"mac": "cmd+shift+A",
+				"when": "editorTextFocus"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "tsc -p ./",
