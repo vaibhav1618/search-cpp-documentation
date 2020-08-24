@@ -2,7 +2,7 @@
 
 This extension is a fork from [kunalg](https://github.com/gursahani/search-cpp-documentation.git).
 
-This is a handy tool to browse cppreference documentation from within vscode, instead of going to the browser to do so.
+This is a handy tool to browse cplusplus documentation from within vscode, instead of going to the browser to do so.
 Use this extension to search for library and methods documentation of the C++ standard.
 
 The keyboard shortcuts are ctrl+shift+A on Linux/Windows and cmd+shift+A on mac
