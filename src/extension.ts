@@ -48,7 +48,7 @@ function getWebviewContent() {
   const active = vscode.window.activeTextEditor;
   let site = 'http://www.cppreference.com/';
   if (!active.selection.isEmpty) {
-    site += 'mwiki/index.php?title=Special%3ASearch&search=';
+    site += 'search.do?q=';
     site += encodeURIComponent(active.document.getText(active.selection));
   }
   return `<!DOCTYPE html>
