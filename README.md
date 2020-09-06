@@ -1,4 +1,4 @@
-# Search CPP Documentation
+# Search cplusplus documentation
 
 This extension is a fork from [kunalg](https://github.com/gursahani/search-cpp-documentation.git)/[FederAndInk](https://github.com/FederAndInk/search-cpp-documentation).
 
@@ -7,8 +7,8 @@ Use this extension to search for library and methods documentation of the C++ st
 
 The keyboard shortcuts are ctrl+shift+A on Linux/Windows and cmd+shift+A on mac
 
-Or you can access the documentation by going to the pallet ctrl+shift+P or cmd+shift+P and type `Search Cpp Reference`. A window will open besides the current editor and you can browse the cpp documentation.
+Or you can access the documentation by going to the pallet ctrl+shift+P or cmd+shift+P and type `Search cplusplus documentation`. A window will open besides the current editor and you can browse the cpp documentation.
 
 What's more provided by this fork:
 
-- The current selected text will be the search term if any.
+- Perform the search on cplusplus.com instead of cppreference.com

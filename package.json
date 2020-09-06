@@ -1,9 +1,9 @@
 {
-	"name": "cpp-reference-and-documentation",
-	"displayName": "Cpp Reference and Documentation",
-	"description": "Search Cpp Documentation, cppreference.com",
-	"version": "0.0.5",
-	"publisher": "FederAndInk",
+	"name": "cplusplus-reference-and-documentation",
+	"displayName": "cplusplus reference and documentation",
+	"description": "Search cplusplus documentation, cplusplus.com",
+	"version": "0.0.6",
+	"publisher": "vaibhav1618",
 	"author": {
 		"name": "kunalg",
 		"url": "https://github.com/gursahani/search-cpp-documentation.git"
@@ -24,6 +24,11 @@
 			"name": "FederAndInk",
 			"url": "https://github.com/FederAndInk",
 			"email": "federandink@gmail.com"
+		},
+		{
+			"name": "vaibhav1618",
+			"url": "https://github.com/vaibhav1618/search-cpp-documentation",
+			"email": "vaibhav.kumar001@gmail.com"
 		}
 	],
 	"engines": {
@@ -32,14 +37,14 @@
 	"icon": "img/cpp_logo.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/FederAndInk/search-cpp-documentation.git"
+		"url": "https://github.com/vaibhav1618/search-cpp-documentation.git"
 	},
 	"categories": [
 		"Other",
 		"Programming Languages"
 	],
 	"keywords": [
-		"cppreference",
+		"cplusplus.com",
 		"search",
 		"documentation",
 		"docs",
@@ -58,7 +63,7 @@
 		"commands": [
 			{
 				"command": "docs.start",
-				"title": " Cpp Reference",
+				"title": " cplusplus reference",
 				"category": "Search"
 			}
 		],

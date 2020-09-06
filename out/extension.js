@@ -19,7 +19,7 @@ function activate(context) {
             currentDoc.webview.html = getWebviewContent();
         }
         else {
-            currentDoc = vscode.window.createWebviewPanel('docs', 'Search CPP Documentation', {
+            currentDoc = vscode.window.createWebviewPanel('docs', 'Search cplusplus documentation', {
                 viewColumn: vscode.ViewColumn.Beside,
                 preserveFocus: false
             }, {
@@ -27,7 +27,7 @@ function activate(context) {
                 enableFindWidget: true,
                 retainContextWhenHidden: true
             });
-            vscode.window.setStatusBarMessage("Search cpp reference");
+            vscode.window.setStatusBarMessage("Search cplusplus reference");
             currentDoc.webview.html = getWebviewContent();
             currentDoc.onDidDispose(() => {
                 currentDoc = undefined;
@@ -38,9 +38,9 @@ function activate(context) {
 exports.activate = activate;
 function getWebviewContent() {
     const active = vscode.window.activeTextEditor;
-    let site = 'http://www.cppreference.com/';
+    let site = 'http://www.cplusplus.com/';
     if (!active.selection.isEmpty) {
-        site += 'mwiki/index.php?title=Special%3ASearch&search=';
+        site += 'search.do?q=';
         site += encodeURIComponent(active.document.getText(active.selection));
     }
     return `<!DOCTYPE html>
